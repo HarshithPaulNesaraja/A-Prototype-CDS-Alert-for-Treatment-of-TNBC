@@ -211,11 +211,11 @@ app.post('/cds-services/pgx-on-order', (req, res) => {
       suggestions: [
         ...(brcaBothDetected || brca1Detected || brca2Detected ? [{
           label: "Add Olaparib (Strongly Recommended)",
-          uuid: "add-olanzapine",
+          uuid: "add-olaparib",
           actions: [
             {
               type: "create",
-              description: "Add Olanzapine (RxNorm 204447) to orders.",
+              description: "Add Olaparib (RxNorm 1792776) to orders.",
               resource: {
                 resourceType: "MedicationRequest",
                 status: "active",
@@ -224,11 +224,11 @@ app.post('/cds-services/pgx-on-order', (req, res) => {
                   coding: [
                     {
                       system: "http://www.nlm.nih.gov/research/umls/rxnorm",
-                      code: "204447",
-                      display: "Olanzapine"
+                      code: "1792776",
+                      display: "Olaparib"
                     }
                   ],
-                  text: "Olanzapine"
+                  text: "Olaparib"
                 },
                 subject: {
                   reference: `Patient/${req.body.context?.patientId || "unknown"}`
@@ -294,11 +294,11 @@ app.post('/cds-services/pgx-on-order', (req, res) => {
       suggestions: [
         ...(brcaBothDetected || brca1Detected || brca2Detected ? [{
           label: "Add Olaparib (Strongly Recommended)",
-          uuid: "add-olanzapine",
+          uuid: "add-olaparib",
           actions: [
             {
               type: "create",
-              description: "Add Olanzapine (RxNorm 204447) to orders.",
+              description: "Add Olaparib (RxNorm 1792776) to orders.",
               resource: {
                 resourceType: "MedicationRequest",
                 status: "active",
@@ -307,11 +307,11 @@ app.post('/cds-services/pgx-on-order', (req, res) => {
                   coding: [
                     {
                       system: "http://www.nlm.nih.gov/research/umls/rxnorm",
-                      code: "204447",
-                      display: "Olanzapine"
+                      code: "1792776",
+                      display: "Olaparib"
                     }
                   ],
-                  text: "Olanzapine"
+                  text: "Olaparib"
                 },
                 subject: {
                   reference: `Patient/${req.body.context?.patientId || "unknown"}`
@@ -350,11 +350,11 @@ app.post('/cds-services/pgx-on-order', (req, res) => {
         },
         {
           label: "Add Pembrolizumab",
-          uuid: "add-pectin",
+          uuid: "add-pembrolizumab",
           actions: [
             {
               type: "create",
-              description: "Add Pectin (RxNorm 197347) to orders.",
+              description: "Add Pembrolizumab (RxNorm 1789221) to orders.",
               resource: {
                 resourceType: "MedicationRequest",
                 status: "active",
@@ -363,11 +363,11 @@ app.post('/cds-services/pgx-on-order', (req, res) => {
                   coding: [
                     {
                       system: "http://www.nlm.nih.gov/research/umls/rxnorm",
-                      code: "197347",
-                      display: "Pectin"
+                      code: "1789221",
+                      display: "Pembrolizumab"
                     }
                   ],
-                  text: "Pectin"
+                  text: "Pembrolizumab"
                 },
                 subject: {
                   reference: `Patient/${req.body.context?.patientId || "unknown"}`
@@ -429,11 +429,11 @@ app.post('/cds-services/pgx-on-order', (req, res) => {
           },
           {
             label: "Add Pembrolizumab",
-            uuid: "add-pectin",
+            uuid: "add-pembrolizumab",
             actions: [
               {
                 type: "create",
-                description: "Add Pectin (RxNorm 197347) to orders.",
+                description: "Add Pembrolizumab (RxNorm 1789221) to orders.",
                 resource: {
                   resourceType: "MedicationRequest",
                   status: "active",
@@ -442,11 +442,11 @@ app.post('/cds-services/pgx-on-order', (req, res) => {
                     coding: [
                       {
                         system: "http://www.nlm.nih.gov/research/umls/rxnorm",
-                        code: "197347",
-                        display: "Pectin"
+                        code: "1789221",
+                        display: "Pembrolizumab"
                       }
                     ],
-                    text: "Pectin"
+                    text: "Pembrolizumab"
                   },
                   subject: {
                     reference: `Patient/${req.body.context?.patientId || "unknown"}`
@@ -481,11 +481,11 @@ app.post('/cds-services/pgx-on-order', (req, res) => {
         suggestions: [
           ...(brcaBothDetected || brca1Detected || brca2Detected ? [{
             label: "Add Olaparib (Strongly Recommended)",
-            uuid: "add-olanzapine",
+            uuid: "add-olaparib",
             actions: [
               {
                 type: "create",
-                description: "Add Olanzapine (RxNorm 204447) to orders.",
+                description: "Add Olaparib (RxNorm 1792776) to orders.",
                 resource: {
                   resourceType: "MedicationRequest",
                   status: "active",
@@ -494,11 +494,11 @@ app.post('/cds-services/pgx-on-order', (req, res) => {
                     coding: [
                       {
                         system: "http://www.nlm.nih.gov/research/umls/rxnorm",
-                        code: "204447",
-                        display: "Olanzapine"
+                        code: "1792776",
+                        display: "Olaparib"
                       }
                     ],
-                    text: "Olanzapine"
+                    text: "Olaparib"
                   },
                   subject: {
                     reference: `Patient/${req.body.context?.patientId || "unknown"}`
@@ -537,11 +537,11 @@ app.post('/cds-services/pgx-on-order', (req, res) => {
           },
           {
             label: "Add Pembrolizumab",
-            uuid: "add-pectin",
+            uuid: "add-pembrolizumab",
             actions: [
               {
                 type: "create",
-                description: "Add Pectin (RxNorm 197347) to orders.",
+                description: "Add Pembrolizumab (RxNorm 1789221) to orders.",
                 resource: {
                   resourceType: "MedicationRequest",
                   status: "active",
@@ -550,11 +550,11 @@ app.post('/cds-services/pgx-on-order', (req, res) => {
                     coding: [
                       {
                         system: "http://www.nlm.nih.gov/research/umls/rxnorm",
-                        code: "197347",
-                        display: "Pectin"
+                        code: "1789221",
+                        display: "Pembrolizumab"
                       }
                     ],
-                    text: "Pectin"
+                    text: "Pembrolizumab"
                   },
                   subject: {
                     reference: `Patient/${req.body.context?.patientId || "unknown"}`
